@@ -103,7 +103,7 @@ bool MakeParentDir(std::string directory)
     return true;
 }
 
-int test(int argc, char** argv)
+int main(int argc, char** argv)
 {
     std::string directory = argv[1];
 
