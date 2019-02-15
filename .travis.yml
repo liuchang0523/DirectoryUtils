@@ -18,12 +18,11 @@ before_script:
 script:
   # once CMake has done its job we just build using make as usual
   - cmake --build . --config Release
-  - ${TRAVIS_BUILD_DIR}
 
 deploy:              # 部署
   provider: releases # 部署到GitHub Release，除此之外，Travis CI还支持发布到fir.im、AWS、Google App Engine等
   api_key:           # 填写GitHub的token （Settings -> Personal access tokens -> Generate new token）
-    secure: 09630800005658db6d7fac337d99857d4e4b45bf 
+    secure: f0945c64add4aac36fcb6864016a3f44b73169fb 
   file: ${TRAVIS_BUILD_DIR}\source\Release\DirectoryUtils.exe   # 部署文件路径
   skip_cleanup: true     # 设置为true以跳过清理,不然apk文件就会被清理
   on:     # 发布时机           
