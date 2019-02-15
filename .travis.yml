@@ -26,3 +26,7 @@ deploy:              # 部署
   skip_cleanup: true     # 设置为true以跳过清理,不然apk文件就会被清理
   on:     # 发布时机           
     tags: true       # tags设置为true表示只有在有tag的情况下才部署
+
+notifications:      #邮件提醒
+  email:
+    - 100930523@qq.com
