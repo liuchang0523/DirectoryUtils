@@ -16,7 +16,7 @@
 
 #define DirectoryUtils_VERSION_MAJOR 0
 #define DirectoryUtils_VERSION_MINOR 0
-#define DirectoryUtils_VERSION_PATCH 1
+#define DirectoryUtils_VERSION_PATCH 2
 
 #define DirectoryUtils_STR_EXP(__A)    #__A
 #define DirectoryUtils_STR(__A)        DirectoryUtils_STR_EXP(__A)
@@ -24,7 +24,7 @@
 #define DirectoryUtils_STRW_EXP(__A)   L#__A
 #define DirectoryUtils_STRW(__A)       DirectoryUtils_STRW_EXP(__A)
 
-#define VERSION     DirectoryUtils_STR(0) "." DirectoryUtils_STR(0) "." DirectoryUtils_STR(1)
+#define VERSION     DirectoryUtils_STR(0) "." DirectoryUtils_STR(0) "." DirectoryUtils_STR(2)
 
 
 #endif // ___VERSION_H__
